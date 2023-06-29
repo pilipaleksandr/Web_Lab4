@@ -19,12 +19,7 @@ class Singleton {
     }
 }
 
-// Використання Singleton
 
-// Спроба створення нового об'єкту через конструктор заборонена
-// $singleton = new Singleton(); // Помилка: Constructor Singleton::__construct() is private
-
-// Отримання єдиного екземпляру Singleton
 $singleton1 = Singleton::getInstance();
 $singleton2 = Singleton::getInstance();
 
@@ -33,7 +28,7 @@ if ($singleton1 === $singleton2) {
     echo "Обидва об'єкти вказують на один і той самий екземпляр Singleton<br>";
 }
 
-// Виведення даних Singleton
+
 echo "Дані: " . $singleton1->getData() . "<br>";
 echo "Дані: " . $singleton2->getData() . "<br>";
 ?>
